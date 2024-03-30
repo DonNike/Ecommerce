@@ -64,5 +64,94 @@ nav{
     font-weight: 400;
   }
   .slider{
-    background: url('https://img.freepik.com/free-photo/abstract-uv-ultraviolet-light-composition_23-2149243965.jpg?t=st=1711752487~exp=1711756087~hmac=8cda0bdff73c321ab4063133f1c6c46d65493d7add347f7b9cb7f6f07219c89e&w=826');
+    background: url('https://img.freepik.com/free-photo/dark-green-brick-wall-textured_53876-95049.jpg?t=st=1711817228~exp=1711820828~hmac=229c3a5b0b06a5b6546bf480db56d934379eadcdd5ed6aea6d8b4db22dbdf6fa&w=740');
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 1% 85%); */
+  }
+  .sliderwrapper{
+    display: flex;
+    width: 500vw;
+  }
+  .sliderItem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .sliderImg{
+    z-index: 1;
+  }
+  .slideBg{
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-color: yellow;
+    position: absolute;
+  }
+  .sliderTitle{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    z-index: 1;
+  }
+  .sliderPrice{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 60px;
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    border: 1px solid gray;
+    z-index: 1;
+  }
+  .buyButton{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 30px;
+    color: white;
+    font-weight: 900;
+    border: 1px solid gray;
+    z-index: 1;
+    cursor: pointer;
+    background-color: black;
+  }
+  .buyButton:hover{
+    background-color: white;
+    color: black;
+  }
+  .sliderItem:nth-child(1) .slideBg{
+    background-color: yellow;
+  }
+  .sliderItem:nth-child(2) .slideBg{
+    background-color: rebeccapurple;
+  }
+  .sliderItem:nth-child(3) .slideBg{
+    background-color: teal;
+  }
+  .sliderItem:nth-child(4) .slideBg{
+    background-color: cornflowerblue;
+  }
+  .sliderItem:nth-child(5) .slideBg{
+    background-color: rgb(124, 115, 80);
+  }
+
+  .sliderItem:nth-child(1) .sliderPrice{
+    color: yellow;
+  }
+  .sliderItem:nth-child(2) .sliderPrice{
+    color: rebeccapurple;
+  }
+  .sliderItem:nth-child(3) .sliderPrice{
+    color: teal;
+  }
+  .sliderItem:nth-child(4) .sliderPrice{
+    color: cornflowerblue;
+  }
+  .sliderItem:nth-child(5) .sliderPrice{
+    color: rgb(124, 115, 80);
   }
