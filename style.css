@@ -65,11 +65,13 @@ nav{
   }
   .slider{
     background: url('https://img.freepik.com/free-photo/dark-green-brick-wall-textured_53876-95049.jpg?t=st=1711817228~exp=1711820828~hmac=229c3a5b0b06a5b6546bf480db56d934379eadcdd5ed6aea6d8b4db22dbdf6fa&w=740');
-    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 1% 85%); */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 1% 85%);
+    overflow: hidden;
   }
   .sliderwrapper{
     display: flex;
     width: 500vw;
+    transition: all 1s ease-in-out;
   }
   .sliderItem{
     width: 100vw;
@@ -144,7 +146,7 @@ nav{
     color: yellow;
   }
   .sliderItem:nth-child(2) .sliderPrice{
-    color: rebeccapurple;
+    color: white;
   }
   .sliderItem:nth-child(3) .sliderPrice{
     color: teal;
@@ -153,5 +155,5 @@ nav{
     color: cornflowerblue;
   }
   .sliderItem:nth-child(5) .sliderPrice{
-    color: rgb(124, 115, 80);
+    color: whitesmoke;
   }
